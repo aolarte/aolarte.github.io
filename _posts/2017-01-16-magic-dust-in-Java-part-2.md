@@ -1,5 +1,5 @@
 ---
-layout: single  
+layout: single
 title: Understanding Magic Dust in Java and the JVM (part 2)
 date: '2017-01-16T07:00:00.000-06:00'
 author: Andres Olarte
