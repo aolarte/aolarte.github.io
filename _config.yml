@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Andres Olarte"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/aolarte-bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Passionate about technology. Currently working as a Java Principal Software Engineer at The Nerdery in Chicago."
   location         : "Chicago, IL"
   email            :
