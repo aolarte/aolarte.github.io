@@ -67,23 +67,16 @@ Take a look at the (somewhat abridged) [`SecurityContextPersistenceFilter`](http
 ~~~java
 public class SecurityContextPersistenceFilter extends GenericFilterBean {
 
-	
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
 			throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) res;
-
-	
-
 		HttpRequestResponseHolder holder = new HttpRequestResponseHolder(request,
 				response);
 		SecurityContext contextBeforeChainExecution = repo.loadContext(holder); // 1
-
 		try {
 			SecurityContextHolder.setContext(contextBeforeChainExecution); // 2
-
 			chain.doFilter(holder.getRequest(), holder.getResponse()); // 3
-
 		}
 		finally {
 			SecurityContext contextAfterChainExecution = SecurityContextHolder
@@ -122,12 +115,10 @@ final class ThreadLocalSecurityContextHolderStrategy implements
 
 	public SecurityContext getContext() {
 		SecurityContext ctx = contextHolder.get();
-
 		if (ctx == null) {
 			ctx = createEmptyContext();
 			contextHolder.set(ctx);
 		}
-
 		return ctx;
 	}
 
@@ -153,8 +144,7 @@ public class AdminService {
   @Secured("ADMIN")
   public void admin(Model model) {
     System.out.println("Got new model");
-  }
- 
+  } 
 }
 ~~~
 
@@ -180,7 +170,6 @@ public abstract class AbstractSecurityInterceptor implements InitializingBean,
 		catch (AccessDeniedException accessDeniedException) {
 			publishEvent(new AuthorizationFailureEvent(object, attributes, authenticated, //3
 					accessDeniedException));
-
 			throw accessDeniedException;
 		}
 		//Removed InterceptorStatusToken generation code for brevity
@@ -189,11 +178,9 @@ public abstract class AbstractSecurityInterceptor implements InitializingBean,
 	private Authentication authenticateIfRequired() {
 		Authentication authentication = SecurityContextHolder.getContext()
 				.getAuthentication();
-
 		//Removed code to try to re-authenticate for brevity
 		return authentication;
 	}
-
 }
 ~~~
 
