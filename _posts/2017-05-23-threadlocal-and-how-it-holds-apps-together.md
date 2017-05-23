@@ -1,7 +1,7 @@
 ---
 layout: single
 title: ThreadLocal, and how it holds apps together
-excerpt: What is and why is ThreadLocal important? As one of the most important pieces of glue logic in modern Java web applications, basic knowledge of its operation is critical.
+excerpt: What is and why is ThreadLocal important? It's one of the key pieces of glue logic in modern Java web applications, so read on.
 date: '2017-05-23T07:00:00.000-06:00'
 author: Andres Olarte
 tags:
