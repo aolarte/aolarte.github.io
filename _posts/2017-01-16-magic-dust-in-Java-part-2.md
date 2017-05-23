@@ -152,9 +152,11 @@ So how does a framework like Spring implement functionality such as transaction 
 
 In transaction management for example, before entering a method marked as [@Transactional](https://javaee-spec.java.net/nonav/javadocs/javax/transaction/Transactional.html), the proxy code will check in a `ThreadLocal` variable to see if there's a transaction in progress. If there is, it will be reused (reentrant transactions), otherwise a new one will be created and stored in `ThreadLocal` for access down the stack.
 
-Security annotations work in a similar fashion, with the authentication code storing the authorization information in `ThreadLocal`. This information is it's accessible by the proxy code wrapping methods annotated with (@RolesAllowed)[http://docs.oracle.com/javaee/6/api/javax/annotation/security/RolesAllowed.html]. 
+Security annotations work in a similar fashion, with the authentication code storing the authorization information in `ThreadLocal`. This information is it's accessible by the proxy code wrapping methods annotated with [@RolesAllowed](http://docs.oracle.com/javaee/6/api/javax/annotation/security/RolesAllowed.html). 
 
 While this is not a discussion about `ThreadLocal` it's worth mentioning that as the name implies the information stored in such a variable is only available to code executing in the same thread. Special logic must take care of propagating this information to other threads in the JVM, or to a remote thread in case of RMI.
+
+For more information on how `ThreadLocal` works, take a look at this post here: [ThreadLocal, and how it holds apps together](/2017/05/16/threadlocal-and-how-it-holds-apps-together.html).
 
 ## Final notes
 
