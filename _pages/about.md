@@ -20,6 +20,7 @@ You can find me in  [LinkedIn](http://www.linkedin.com/in/andresolarte) or [Twit
 
 Below is a list of  the certifications I currently have:
 
+* Google Cloud Certified, Professional Cloud Architect
 * Oracle Certified Expert, Java EE 6 Web Services Developer
 * Oracle Certified Professional, Java SE 8 Programmer
 * Oracle Certified Professional, Oracle WebLogic Server 12c Administration
