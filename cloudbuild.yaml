@@ -9,4 +9,3 @@ steps:
   - id: Deploy to App Engine
     name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
-timeout: "15m"
