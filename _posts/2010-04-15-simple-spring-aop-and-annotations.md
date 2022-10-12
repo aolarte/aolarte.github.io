@@ -17,13 +17,15 @@ Spring seems to be the tool of choice for many new web projects nowadays, and wh
 
 First let's get everything setup. We'll start with an empty webproject, and we'll add the following libraries:
 
-* All of the jars from the spring-framework-3.0.1 zip. (from http://springsource.org)
-* asm3.2.jar (from http://asm.ow2.org/)
-* aspectjrt.jar and aspectjweaver.jar (from /http://www.eclipse.org/aspectj/downloads.php, in this example I'm using aspectj-1.6.8.jar. The jars you need are inside the jar you download)
-* cglib-2.2.jar (from http://cglib.sourceforge.net/)
-* com.springsource.org.aopalliance-1.0.0.jar (from http://repository.springsource.com/ivy/bundles/external/org.aopalliance/com.springsource.org.aopalliance/1.0.0/com.springsource.org.aopalliance-1.0.0.jar)
-* commons-logging-1.1.1.jar (from http://commons.apache.org/)
-* jstl-api-1.2.jar and jstl-impl-1.2.jar(https://jstl.dev.java.net/download.html, maybe not required, but always useful)
+* All of the jars from the spring-framework-3.0.1 zip. (from [SpringSource](http://springsource.org))
+* asm3.2.jar (from [ASM](http://asm.ow2.org/))
+* aspectjrt.jar and aspectjweaver.jar (from [Eclipse](http://www.eclipse.org/aspectj/downloads.php))
+  * In this example I'm using aspectj-1.6.8.jar. The jars you need are inside the jar you download.
+* cglib-2.2.jar (from [Sourceforge](http://cglib.sourceforge.net/))
+* com.springsource.org.aopalliance-1.0.0.jar (from [SpringSource](http://repository.springsource.com/ivy/bundles/external/org.aopalliance/com.springsource.org.aopalliance/1.0.0/com.springsource.org.aopalliance-1.0.0.jar))
+* commons-logging-1.1.1.jar (from [Apache Commons](http://commons.apache.org/))
+* jstl-api-1.2.jar and jstl-impl-1.2.jar(from [Java site](https://jstl.dev.java.net/download.html)) 
+  * Maybe not required, but always useful.
 
 Now let's create a basic web.xml:
 
@@ -137,15 +139,14 @@ public class Logger {
         try {
             ret = pjp.proceed();
         } catch (Throwable e) {
-        }
-        
+        }        
         System.out.println("Leaving: " + pjp.getSignature().getDeclaringTypeName());
         return ret;
     }
 } 
 {% endhighlight %}
 
-Here we're using the @Around annotation to declare an around join point, since this type gives us more information regarding the class and method we're wrapping. In the same annotation, we also specify that this point cut should be applied to all method of the LogObject class. This is the point cut expression, and it fairly flexible. More information can be found elsewhere in the web, including the Spring (documentation)[http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/aop.html#aop-pointcuts-examples]. Other than this, our aspect just logs the entry and exit of the methods.
+Here we're using the @Around annotation to declare an around join point, since this type gives us more information regarding the class and method we're wrapping. In the same annotation, we also specify that this point cut should be applied to all method of the LogObject class. This is the point cut expression, and it fairly flexible. More information can be found elsewhere in the web, including the Spring [documentation](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/aop.html#aop-pointcuts-examples). Other than this, our aspect just logs the entry and exit of the methods.
 
 The actual class we're applying the aspect to is rather uninteresting:
 
@@ -153,12 +154,10 @@ The actual class we're applying the aspect to is rather uninteresting:
 package test.spring.actions;
 
 public class LogObject implements ILogObject{
-
     @Override
     public String view() {
         return "";
     }
-
 }
 {% endhighlight %}
 
@@ -176,7 +175,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/test")
 public class TestAction {
-
     @Autowired
     ILogObject l;
     @RequestMapping
