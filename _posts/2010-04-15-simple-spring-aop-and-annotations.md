@@ -145,7 +145,7 @@ public class Logger {
 } 
 {% endhighlight %}
 
-Here we're using the @Around annotation to declare an around join point, since this type gives us more information regarding the class and method we're wrapping. In the same annotation, we also specify that this point cut should be applied to all method of the LogObject class. This is the point cut expression, and it fairly flexible. More information can be found elsewhere in the web, including the Spring documentation. Other than this, our aspect just logs the entry and exit of the methods.
+Here we're using the @Around annotation to declare an around join point, since this type gives us more information regarding the class and method we're wrapping. In the same annotation, we also specify that this point cut should be applied to all method of the LogObject class. This is the point cut expression, and it fairly flexible. More information can be found elsewhere in the web, including the Spring (documentation)[http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/aop.html#aop-pointcuts-examples]. Other than this, our aspect just logs the entry and exit of the methods.
 
 The actual class we're applying the aspect to is rather uninteresting:
 
@@ -188,6 +188,6 @@ public class TestAction {
 {% endhighlight %}
 
 
-The controller is letting Spring autowire the ILogObject, which will be proxied to provide the functionality provided by our logging aspect. So, go ahead and hit the action from your browser, in the console you will see the log messages before and after we execute the view() method.
+The controller is letting Spring autowire the ILogObject, which will be proxied to provide the functionality provided by our logging aspect. So, go ahead and hit the action from your browser, in the console you will see the log messages before and after we execute the `view()` method.
 
 So this is it, I hope this helps people as a basic starting point for using AOP inside spring, without having to write too much xml.
