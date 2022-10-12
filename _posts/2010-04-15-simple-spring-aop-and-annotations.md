@@ -99,7 +99,7 @@ The xml simple initializes the spring framework, by passing the location of the 
  <import resource="webmvc-context.xml" />
  <import resource="aop-context.xml"/>
 </beans>
-{% end highlight %}
+{% endhighlight %}
 
 This file is only defining which package should be scanned for packages (test.spring.actions) and importing two further files. One of these files controls the AOP part of the framework, while the other control the MVC (Model-View-Controller) part of the framework. Let's look at the aop-context file:
 
@@ -117,7 +117,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 <bean id="myAspect" class="test.spring.aspects.Logger"/>
 <bean id="myAspectLog" class="test.spring.actions.LogObject"/>
 </beans>
-{% end highlight %}
+{% endhighlight %}
 
 Of note here, is the aspectj-autoproxy tag, which is required to enable the creation of proxy object to apply the aspects. Now, lets look at the code. The first up is the logger aspect that we will be applying to one or more classes:
 
@@ -143,7 +143,7 @@ public class Logger {
         return ret;
     }
 } 
-{% end highlight %}
+{% endhighlight %}
 
 Here we're using the @Around annotation to declare an around join point, since this type gives us more information regarding the class and method we're wrapping. In the same annotation, we also specify that this point cut should be applied to all method of the LogObject class. This is the point cut expression, and it fairly flexible. More information can be found elsewhere in the web, including the Spring documentation. Other than this, our aspect just logs the entry and exit of the methods.
 
@@ -160,7 +160,7 @@ public class LogObject implements ILogObject{
     }
 
 }
-{% end highlight %}
+{% endhighlight %}
 
 Of course this is where you're actual application logic would live, but the purpose here is to provide the simplest example possible. The only notable aspect of this class is that it implements an interface. In our controller we'll use the interface instead of the actual implementation, since what Spring will wire for us is actually a dynamic proxy of the real object. In any case, it is normally good practice to program against interfaces.
 
@@ -185,7 +185,7 @@ public class TestAction {
         return "test";
     }
 }
-{% end highlight %}
+{% endhighlight %}
 
 
 The controller is letting Spring autowire the ILogObject, which will be proxied to provide the functionality provided by our logging aspect. So, go ahead and hit the action from your browser, in the console you will see the log messages before and after we execute the view() method.
