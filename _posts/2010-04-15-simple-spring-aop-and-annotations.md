@@ -83,7 +83,7 @@ Now let's create a basic web.xml:
 </web-app>
 {% endhighlight %}
 
-The xml simple initializes the spring framework, by passing the location of the main configuration file ( /WEB-INF/spring/web-application-context.xml ). We also map our spring actions to *.do. Now let's look at the web-application-context file:
+The xml simply initializes the spring framework, by passing the location of the main configuration file ( `/WEB-INF/spring/web-application-context.xml` ). We also map our spring actions to `*.do`. Now let's look at the `web-application-context.xml` file:
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -103,7 +103,7 @@ The xml simple initializes the spring framework, by passing the location of the 
 </beans>
 {% endhighlight %}
 
-This file is only defining which package should be scanned for packages (test.spring.actions) and importing two further files. One of these files controls the AOP part of the framework, while the other control the MVC (Model-View-Controller) part of the framework. Let's look at the aop-context file:
+This file defines which package should be scanned for components (`test.spring.actions` in this case) and imports two further files. One of these files controls the AOP part of the framework, while the other controls the MVC (Model-View-Controller) part of the framework. Let's look at the `aop-context.xml` file:
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +121,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 </beans>
 {% endhighlight %}
 
-Of note here, is the aspectj-autoproxy tag, which is required to enable the creation of proxy object to apply the aspects. Now, lets look at the code. The first up is the logger aspect that we will be applying to one or more classes:
+Of note here, is the `aspectj-autoproxy` tag, which is required to enable the creation of proxy object to apply the aspects. Now, lets look at the code. The first class is the logger aspect that we will be applying to one or more classes:
 
 {% highlight java %}
 package test.spring.aspects;
@@ -146,7 +146,7 @@ public class Logger {
 } 
 {% endhighlight %}
 
-Here we're using the @Around annotation to declare an around join point, since this type gives us more information regarding the class and method we're wrapping. In the same annotation, we also specify that this point cut should be applied to all method of the LogObject class. This is the point cut expression, and it fairly flexible. More information can be found elsewhere in the web, including the Spring [documentation](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/aop.html#aop-pointcuts-examples). Other than this, our aspect just logs the entry and exit of the methods.
+Here we're using the `@Around` annotation to declare an around join point, since this type gives us more information regarding the class and method we're wrapping. In the same annotation, we also specify that this point cut should be applied to all method of the LogObject class. This is the point cut expression, and it fairly flexible. More information can be found elsewhere in the web, including the Spring [documentation](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/aop.html#aop-pointcuts-examples). Other than this, our aspect just logs the entry and exit of the methods.
 
 The actual class we're applying the aspect to is rather uninteresting:
 
