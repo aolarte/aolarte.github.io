@@ -21,3 +21,7 @@ Based of these [instructions](https://jekyllrb.com/docs/installation/ubuntu/).
 ## Running locally
 
     bundle exec jekyll serve
+
+## Updating dependencies
+
+Running `bundle update` should update the `Gemfile.lock`.
