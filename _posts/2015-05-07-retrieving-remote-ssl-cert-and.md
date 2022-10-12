@@ -13,7 +13,7 @@ blogger_id: tag:blogger.com,1999:blog-3306197464901287625.post-68951120033711072
 blogger_orig_url: http://www.javaprocess.com/2015/05/retrieving-remote-ssl-cert-and.html
 ---
 
-<img src="/images/2015-05-07-retrieving-remote-ssl-cert/lock.jpg" width="150" align="left" hspace="10"> 
+<img src="https://2.bp.blogspot.com/-tZ8vT_hF3sc/VUvraf1IjWI/AAAAAAAAFME/6YuFvbNl2nc/s1600/AD76394B17.jpg" width="150" align="left" hspace="10"> 
 
 In the daily work of a developer, it's often necessary to interact with external servers, for example to access web services. Many times, these are test or development servers, some of which might be secured with a self signed SSL certificate. Since these certificates are not trusted by default in the JRE, the best option is to import said certificate in your JRE. While the information to achieve this is definitely out there, I always find myself having look at a quite a few pages to get all of the pieces together to get the certificate imported. This quick post is an attempt to have full step by step guide to getting your certificate installed. While there are ways of retrieving a certificate using a web browser, that is sometimes not possible, for example when working in a remote server that might lack a GUI. This approach can be used with only a terminal.
 
