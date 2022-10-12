@@ -1,3 +1,21 @@
+---
+permalink: /:categories/:year/:month/:title.html
+layout: single
+title: 'Simple Spring and JPA with Hibernate tutorial. Part 1: The basics'
+date: '2013-09-27T13:04:00.000-07:00'
+author: Andres Olarte
+tags:
+- spring-mvc
+- jpa
+- hibernate
+- spring
+- java
+modified_time: '2013-10-09T12:09:23.729-07:00'
+thumbnail: http://3.bp.blogspot.com/-zsLSlOVOsgg/UkXgeGW_EbI/AAAAAAAAALs/k1vLgdG7_Vo/s72-c/sc1.png
+blogger_id: tag:blogger.com,1999:blog-3306197464901287625.post-7331955557819329436
+blogger_orig_url: http://www.javaprocess.com/2013/09/simple-spring-and-jpa-with-hibernate.html
+---
+
 This is a very basic Spring application, using MVC for the web interface and JPA for persistence. As the JPA implementation we will use Hibernate. However, it is fairly easy to switch to another JPA implementation such as EclipseLink (we will look at how to do this in a later post). In as much as possible, this example uses convention over configuration, favoring brevity over exhaustive listing of options.
 This example requires Maven to be installed and functional. I'm using version 3.0.4, but any relatively new version should suffice.
 We'll start taking a look at the `pom.xml`:
@@ -297,7 +315,7 @@ We can then compile and run our small application with:
 
     mvn tomcat:run
 
-You can see the product of our work at `http://localhost:8080/spring-hib-jpa/view.html`:
+You can see the product of our work at <http://localhost:8080/spring-hib-jpa/view.html>:
 
  ![Screenshot](http://3.bp.blogspot.com/-zsLSlOVOsgg/UkXgeGW_EbI/AAAAAAAAALs/k1vLgdG7_Vo/s1600/sc1.png)
 
@@ -309,7 +327,8 @@ You can clone the code and play with it from github:
     git clone https://github.com/aolarte/tutorials.git
 
 The finished code is contained in directory `spring1_basics`.
-Simple Spring and JPA with Hibernate tutorial series:
+
+## Simple Spring and JPA with Hibernate tutorial series:
 
 * Part 1: The basics
 * [Part 2: Forms and persisting entities](/2013/10/simple-spring-and-jpa-with-hibernate-part2.html)
