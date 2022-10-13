@@ -21,7 +21,7 @@ Spring security In this blog post we continue adding functionality to our Spring
 *   Multiple Spring xml files and their organization
 *   Maven's quirks with transitive dependencies
 
-This example builds on top of the code that was written for [part 2](http://codemethod.blogspot.com/2013/10/simple-spring-and-jpa-with-hibernate-part2.html), but we will rearrange several pieces. Let's start by looking at the pom.xml where we've added two new dependecies:  
+This example builds on top of the code that was written for [part 2](/2013/10/simple-spring-and-jpa-with-hibernate-part2.html), but we will rearrange several pieces. Let's start by looking at the pom.xml where we've added two new dependecies:  
  
 {% highlight xml %}
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
