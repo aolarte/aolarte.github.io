@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,8 +21,8 @@
 title: The Java Process
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Java programming, design patterns and enterprise integration. 
-  The latest and greatest or, the old and proven. 
+  Java programming, design patterns and enterprise integration.
+  The latest and greatest or, the old and proven.
   A little bit of everything related to technology, but mostly programming, databases, and sysadmin topics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -105,3 +105,8 @@ include:
 #   - vendor/ruby/
 
 
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-5MKT8GF507"
+    anonymize_ip: false # default
