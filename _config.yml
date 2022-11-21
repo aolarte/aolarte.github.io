@@ -33,6 +33,8 @@ github_username:  aolarte
 
 # Build settings
 theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: air
+
 
 #plugins:
 #  - jekyll-feed
@@ -104,9 +106,19 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-5MKT8GF507"
     anonymize_ip: false # default
+
+paginate: 10
+
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/aolarte"
+    - label: "Terms"
+      url: "/terms"
