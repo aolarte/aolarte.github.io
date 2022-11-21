@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: A simple CSV MessageBodyWriter for JAX-RS using Jackson
 date: '2015-08-31T14:19:00.000-07:00'
 tags:

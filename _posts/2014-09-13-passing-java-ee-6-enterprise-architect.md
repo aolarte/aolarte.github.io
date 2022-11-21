@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Passing the Java EE 6 Enterprise Architect Certified Master Part 2 and 3 (1Z0-865
   and 1Z0-866)
 date: '2014-09-13T17:03:00.000-07:00'

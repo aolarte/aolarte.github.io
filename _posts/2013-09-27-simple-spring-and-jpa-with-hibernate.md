@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: 'Simple Spring and JPA with Hibernate tutorial. Part 1: The basics'
 date: '2013-09-27T13:04:00.000-07:00'
 author: Andres Olarte

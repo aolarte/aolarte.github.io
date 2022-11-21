@@ -1,5 +1,4 @@
 ---
-layout: single
 title: CJUG Meetup Presentation "Scalable Services with JMS, Spring Integration and Apache Camel"
 date: '2016-06-01T07:00:00.000-06:00'
 tags:
@@ -28,5 +27,5 @@ Find the source code here:
 
 Below is the video of the presentation:
 
-<iframe src="https://player.vimeo.com/video/169607004" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe sandbox="allow-scripts" src="https://player.vimeo.com/video/169607004?dnt=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/169607004">CJUG - 2016-05-16 - Andres Olarte on Spring Integration</a> from <a href="https://vimeo.com/spantree">Spantree Technology Group, LLC</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

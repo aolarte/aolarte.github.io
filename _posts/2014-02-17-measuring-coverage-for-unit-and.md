@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Measuring coverage for Unit and Integration tests with Maven, Jenkins, and
   SonarQube
 date: '2014-02-17T08:46:00.001-08:00'

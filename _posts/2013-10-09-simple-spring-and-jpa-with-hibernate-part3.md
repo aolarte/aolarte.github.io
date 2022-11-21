@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: 'Simple Spring and JPA with Hibernate tutorial. Part 3: Simple Security'
 date: '2013-10-09T12:06:00.000-07:00'
 tags:

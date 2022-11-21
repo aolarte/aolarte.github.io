@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Stepping through the internal code of your JavaEE application server in IntelliJ
   IDEA
 date: '2015-03-01T15:25:00.000-08:00'

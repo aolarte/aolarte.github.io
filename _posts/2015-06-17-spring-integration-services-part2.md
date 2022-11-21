@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Using Spring Integration for creating scalable distributed services backed
   by JMS (part 2)
 date: '2015-06-17T16:49:00.002-07:00'

@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Passing the Java EE 6 Enterprise Architect Certified Master Part 1 (Exam 1Z0-807)
 date: '2014-06-30T10:34:00.003-07:00'
 tags:

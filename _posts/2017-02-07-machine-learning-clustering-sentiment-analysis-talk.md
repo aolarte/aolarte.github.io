@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Talking at "Nerd Interface" - Machine Learning for Clustering & Sentiment Analysis
 date: '2017-02-07T07:00:00.000-06:00'
 tags:
@@ -30,7 +29,7 @@ Here's the synopsis of the talk:
  
 The event was broadcast through Facebook Live, and you can see the recording here:
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTheNerdery%2Fvideos%2F1444941262203618%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<iframe  sandbox="allow-scripts"  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTheNerdery%2Fvideos%2F1444941262203618%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 
 
 The presentation is available [here](https://docs.google.com/presentation/d/1iod4I9O-dHCojJnlq4yU5UVKGRZSDkjQLu4CBIZkCus/edit#slide=id.p).

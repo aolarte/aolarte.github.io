@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Using Apache Camel and CDI for creating scalable distributed services backed
   by JMS (part 2)
 date: '2015-10-25T16:46:00.001-07:00'

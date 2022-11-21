@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: 'My Study notes for  Oracle WebLogic Server 12c: Advanced Administrator II
   (1z0-134)'
 date: '2015-03-14T14:40:00.002-07:00'

@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Retrieving a remote SSL cert and  importing it in the JRE's keystore
 date: '2015-05-07T15:32:00.000-07:00'
 tags:

@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Simple Spring AOP and annotations example
 date: '2010-04-15T15:12:00.000-07:00'
 tags:

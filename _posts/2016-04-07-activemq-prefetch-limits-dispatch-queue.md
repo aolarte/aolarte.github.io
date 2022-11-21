@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: ActiveMQ, prefetch limits, the Dispatch Queue and transactions
 date: '2016-04-07T07:28:00.000-07:00'
 tags:

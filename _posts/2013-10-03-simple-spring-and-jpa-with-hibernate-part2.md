@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: 'Simple Spring and JPA with Hibernate tutorial. Part 2: Forms and persisting
   entities'
 date: '2013-10-03T06:08:00.000-07:00'

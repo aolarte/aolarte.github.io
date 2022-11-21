@@ -55,7 +55,7 @@ defaults:
 author:
   name             : "Andres Olarte"
   avatar           : "/assets/images/aolarte-bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Passionate about technology. Currently working as a Strategic Cloud Engineer for Google in Chicago."
+  bio              : "Passionate about technology. Currently working as a Strategic Cloud Engineer for Google Cloud in Chicago."
   location         : "Chicago, IL"
   email            :
   uri              :
@@ -111,6 +111,11 @@ analytics:
   google:
     tracking_id: "G-5MKT8GF507"
     anonymize_ip: false # default
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "javaprocess"
 
 paginate: 10
 

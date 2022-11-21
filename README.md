@@ -22,6 +22,8 @@ Based of these [instructions](https://jekyllrb.com/docs/installation/ubuntu/).
 
     bundle exec jekyll serve
 
+**Commments don't work locally** unless `JEKYLL_ENV=production` is set.
+
 ## Updating dependencies
 
 Running `bundle update` should update the `Gemfile.lock`.

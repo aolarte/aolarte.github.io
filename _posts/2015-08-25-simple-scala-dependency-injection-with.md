@@ -1,6 +1,5 @@
 ---
 permalink: /:categories/:year/:month/:title.html
-layout: single
 title: Simple Scala dependency injection with Scaldi (part 1)
 date: '2015-08-25T16:47:00.000-07:00'
 tags:

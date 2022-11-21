@@ -1,11 +1,11 @@
 ---
-layout: single
 title: ThreadLocal, and how it holds apps together
 excerpt: What is ThreadLocal and why is it important? It's one of the key pieces of glue logic in modern Java web applications, so read on.
 date: '2017-05-23T07:00:00.000-06:00'
 tags:
 - java
 - threads
+commments: true
 ---
 
 # What is ThreadLocal?
